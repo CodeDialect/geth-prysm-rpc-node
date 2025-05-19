@@ -20,6 +20,8 @@ This repo provides a fully automated, one-click script to launch your own full E
 ## Quick Start
 
 ```bash
+sudo apt-get -qq update && sudo apt-get upgrade -y
+sudo apt -qq install curl -y
 curl -s https://raw.githubusercontent.com/noderhunterz/geth-prysm-aztec-rpc/main/setup-geth-prysm.sh | sudo bash
 ```
 
@@ -49,22 +51,26 @@ Use these with Aztec CLI or Sequencer configurations.
 
 ---
 
-## Watch the Full Walkthrough
-
-[![YouTube Thumbnail](https://github.com/noderhunterz/assets/blob/main/aztec-rpc-thumb.png)](https://youtube.com/your-video-link)
-
----
-
 ## Recommended Firewall Rules
 
 ```bash
 # Allow P2P for geth
+sudo ufw allow ssh
+sudo ufw allow 22
 sudo ufw allow 30303/tcp
 sudo ufw allow 30303/udp
 
-# Allow local access for RPCs
+# Allow local access for RPCs (If you want to use the RPCs in the same vps)
 sudo ufw allow from 127.0.0.1 to any port 8545 proto tcp
 sudo ufw allow from 127.0.0.1 to any port 3500 proto tcp
+
+# Allow specific vps access for RPCs (If you want to use the RPCs in the specific vps)
+sudo ufw allow from <your_ip> to any port 8545 proto tcp
+sudo ufw allow from <your_ip> to any port 3500 proto tcp
+
+# Allow to run any remote vps
+sudo ufw allow 8545/tcp
+sudo ufw allow 3500/tcp
 ```
 
 ---
@@ -88,29 +94,12 @@ curl http://localhost:3500/eth/v1/node/syncing
 ## Contributing
 
 Got ideas, scripts, or improvements? PRs are welcome!  
-Join us in pushing decentralization forward ðŸ’¥
-
----
-
-## Credits
-
-Created by **Noderhunterz**  
-Inspired by the [Aztec Sequencer Docs](https://github.com/AztecProtocol/aztec-packages)  
-Base Geth/Prysm setup adapted from community best practices.
+Join us in pushing decentralization forward
 
 ---
 
 ## Community & Support
 
-ðŸ—¨ï¸ Discord: [coming soon]  
-ðŸ¦ Twitter: [@noderhunterz](https://twitter.com/noderhunterz)
+Discord: [coming soon] 
 
 ---
-
-## Donations
-
-If this saves you time, consider tipping in ETH:
-
-`0xYourDonationWalletAddressHere`
-
-Stay decentralized!
