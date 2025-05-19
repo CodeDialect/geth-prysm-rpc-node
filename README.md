@@ -60,18 +60,22 @@ sudo ufw allow ssh
 sudo ufw allow 22
 sudo ufw allow 30303/tcp
 sudo ufw allow 30303/udp
+sudo ufw enable
 
 # Allow local access for RPCs (If you want to use the RPCs in the same vps)
 sudo ufw allow from 127.0.0.1 to any port 8545 proto tcp
 sudo ufw allow from 127.0.0.1 to any port 3500 proto tcp
+sudo ufw reload
 
 # Allow specific vps access for RPCs (If you want to use the RPCs in the specific vps)
 sudo ufw allow from <your_ip> to any port 8545 proto tcp
 sudo ufw allow from <your_ip> to any port 3500 proto tcp
+sudo ufw reload
 
 # Allow to run any remote vps
 sudo ufw allow 8545/tcp
 sudo ufw allow 3500/tcp
+sudo ufw reload
 ```
 
 ---
@@ -111,6 +115,6 @@ Join us in pushing decentralization forward
 
 ## Community & Support
 
-Discord: [coming soon] 
+Discord: https://discord.gg/4w7cRka4
 
 ---
