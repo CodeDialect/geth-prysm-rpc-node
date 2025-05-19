@@ -22,7 +22,7 @@ This repo provides a fully automated, one-click script to launch your own full E
 ```bash
 sudo apt-get -qq update && sudo apt-get upgrade -y
 sudo apt -qq install curl -y
-curl -s https://raw.githubusercontent.com/codedialect/geth-prysm-rpc-node/setup_geth_prysm.sh  | sudo bash
+curl -s https://raw.githubusercontent.com/codedialect/geth-prysm-rpc-node/main/setup_geth_prysm.sh  | sudo bash
 ```
 
 
