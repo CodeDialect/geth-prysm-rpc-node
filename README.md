@@ -1,33 +1,32 @@
 
-# ðŸš€ 1-Click Ethereum Sepolia Node + Custom Aztec RPC
+# 1-Click Ethereum Sepolia Node + Custom Aztec RPC
 **Powered by Noderhunterz**
 
 This repo provides a fully automated, one-click script to launch your own full Ethereum Sepolia node using **Geth** (execution client) and **Prysm** (consensus client), with a **custom RPC endpoint** for use with the Aztec network.
 
 ---
 
-## ðŸ”§ Features
+## Features
 
-- âœ… One-click setup for Geth + Prysm via Docker
-- âœ… Custom RPC endpoint for Aztec CLI or Sequencer
-- âœ… Full Sepolia node support
-- âœ… Secure JWT secret generation
-- âœ… Automatic dependency and Docker installation
-- âœ… Ideal for developers and node runners
+- One-click setup for Geth + Prysm via Docker
+- Custom RPC endpoint for Aztec CLI or Sequencer
+- Full Sepolia node support
+- Secure JWT secret generation
+- Automatic dependency and Docker installation
+- Ideal for developers and node runners
 
 ---
 
-## âš¡ï¸ Quick Start
+## Quick Start
 
 ```bash
 curl -s https://raw.githubusercontent.com/noderhunterz/geth-prysm-aztec-rpc/main/setup-geth-prysm.sh | sudo bash
 ```
 
-> âš ï¸ Script is designed for Ubuntu 20.04 or newer. Must be run as root or with `sudo`.
 
 ---
 
-## ðŸ“‚ What It Sets Up
+## What It Sets Up
 
 - `/root/ethereum/execution` â†’ Geth data directory  
 - `/root/ethereum/consensus` â†’ Prysm data directory  
@@ -38,7 +37,7 @@ curl -s https://raw.githubusercontent.com/noderhunterz/geth-prysm-aztec-rpc/main
 
 ---
 
-## ðŸ§ª Aztec RPC Endpoints
+## Aztec RPC Endpoints
 
 - **Execution Layer (Geth)**  
   `http://<your-vps-ip>:8545`
@@ -50,13 +49,13 @@ Use these with Aztec CLI or Sequencer configurations.
 
 ---
 
-## ðŸ“º Watch the Full Walkthrough
+## Watch the Full Walkthrough
 
 [![YouTube Thumbnail](https://github.com/noderhunterz/assets/blob/main/aztec-rpc-thumb.png)](https://youtube.com/your-video-link)
 
 ---
 
-## ðŸ”’ Recommended Firewall Rules
+## Recommended Firewall Rules
 
 ```bash
 # Allow P2P for geth
@@ -70,7 +69,7 @@ sudo ufw allow from 127.0.0.1 to any port 3500 proto tcp
 
 ---
 
-## ðŸ“¡ Sync Status Checks
+## Sync Status Checks
 
 **Check Geth sync:**
 ```bash
@@ -86,14 +85,14 @@ curl http://localhost:3500/eth/v1/node/syncing
 
 ---
 
-## ðŸ‘¨â€ðŸ’» Contributing
+## Contributing
 
 Got ideas, scripts, or improvements? PRs are welcome!  
 Join us in pushing decentralization forward ðŸ’¥
 
 ---
 
-## ðŸ§  Credits
+## Credits
 
 Created by **Noderhunterz**  
 Inspired by the [Aztec Sequencer Docs](https://github.com/AztecProtocol/aztec-packages)  
@@ -101,17 +100,17 @@ Base Geth/Prysm setup adapted from community best practices.
 
 ---
 
-## ðŸ’¬ Community & Support
+## Community & Support
 
 ðŸ—¨ï¸ Discord: [coming soon]  
 ðŸ¦ Twitter: [@noderhunterz](https://twitter.com/noderhunterz)
 
 ---
 
-## ðŸª™ Donations
+## Donations
 
 If this saves you time, consider tipping in ETH:
 
 `0xYourDonationWalletAddressHere`
 
-â¤ï¸ Stay decentralized!
+Stay decentralized!
