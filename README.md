@@ -30,9 +30,9 @@ curl -s https://raw.githubusercontent.com/codedialect/geth-prysm-rpc-node/setup_
 
 ## What It Sets Up
 
-- `/root/ethereum/execution` â†’ Geth data directory  
-- `/root/ethereum/consensus` â†’ Prysm data directory  
-- `/root/ethereum/jwt.hex` â†’ JWT secret used by both clients  
+- `/root/ethereum/execution` Geth data directory  
+- `/root/ethereum/consensus`  Prysm data directory  
+- `/root/ethereum/jwt.hex`  JWT secret used by both clients  
 - Docker services:
   - **Geth** (Ethereum Sepolia full node)
   - **Prysm** (Beacon/Consensus client)
@@ -89,6 +89,16 @@ http://localhost:8545
 curl http://localhost:3500/eth/v1/node/syncing
 ```
 
+**Check logs:**
+For prysm logs:
+```bash
+sudo docker logs prysm -f
+```
+
+For Consensus(geth) logs:
+```bash
+sudo docker logs geth -f
+```
 ---
 
 ## Contributing
