@@ -92,12 +92,12 @@ curl http://localhost:3500/eth/v1/node/syncing
 **Check logs:**
 For prysm logs:
 ```bash
-sudo docker logs prysm -f
+sudo docker logs prysm -fn 100
 ```
 
 For Consensus(geth) logs:
 ```bash
-sudo docker logs geth -f
+sudo docker logs geth -fn 100
 ```
 ---
 
