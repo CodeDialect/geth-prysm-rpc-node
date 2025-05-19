@@ -21,7 +21,7 @@ ${NC}"
 
 echo -e "${CYAN}Installing required packages...${NC}"
 sudo apt -qq update && sudo apt -qq upgrade -y
-sudo apt -qq install -y curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev ca-certificates gnupg
+sudo apt -qq install -y curl iptables build-essential git ufw wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev ca-certificates gnupg
 
 echo -e "${CYAN}Installing Docker and Docker Compose...${NC}"
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove -y $pkg; done
