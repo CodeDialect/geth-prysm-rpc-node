@@ -115,6 +115,6 @@ Join us in pushing decentralization forward
 
 ## Community & Support
 
-Discord: https://discord.gg/4w7cRka4
+Discord: https://discord.gg/BNugYDJKKf
 
 ---
